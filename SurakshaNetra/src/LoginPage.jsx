@@ -38,6 +38,7 @@ const LoginPage = () => {
             </button>
           </Link>
           <p className="mt-3 text-center text-yellow-200 text-lg font-medium">
+            dasdd
           </p>
         </div>
       </div>
