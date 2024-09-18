@@ -13,29 +13,29 @@ const HomePage = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-gray-900 text-white p-6 relative overflow-hidden">
       {/* Top-Left Image with Background Box */}
       <div className="absolute top-4 left-4 p-2 bg-yellow-50 bg-opacity-70 rounded-lg shadow-lg border-[1px] border-yellow-300">
-        <img src={sih} alt="SIH Logo" className="h-[60px] w-[170px] object-contain" />
+        <img src={sih} alt="SIH Logo" className="h-[50px] w-[150px] object-contain" />
       </div>
 
-      {/* Title with Logo Side by Side */}
-      <div className="relative flex items-center mt-[-30px] mb-4">
-        <img src={logo} alt="Logo" className="h-[80px] w-[80px] object-contain mr-4 shadow-lg mt-4" />
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-wider text-yellow-400 drop-shadow-lg hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-105">
+      {/* Title with Logo Side by Side (Stack on small screens) */}
+      <div className="relative flex flex-col sm:flex-row items-center justify-center sm:justify-start mt-14 sm:mt-[-50px] mb-4 space-y-4 sm:space-y-0 sm:space-x-4">
+        <img src={logo} alt="Logo" className="h-[60px] w-[60px] object-contain shadow-lg mt-4 mb-2" />
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-wider text-yellow-400 drop-shadow-lg hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-105 mt-4 mb-2">
           SurakshaNetra
         </h1>
       </div>
 
-      {/* Team and Problem Code Info */}
-      <div className="absolute top-4 right-4 flex flex-col items-end space-y-2">
-        <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 font-bold px-3 py-1.5 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+      {/* Team and Problem Code Info (Stack on small screens) */}
+      <div className="absolute top-4 right-4 flex flex-col items-end space-y-2 text-sm sm:text-base">
+        <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 font-bold px-3 py-1 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
           Team: CodeSparks
         </div>
-        <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 font-bold px-3 py-1.5 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
+        <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 font-bold px-3 py-1 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
           Problem Code: SIH1605
         </div>
       </div>
 
       {/* Description */}
-      <div className="max-w-3xl text-center bg-white bg-opacity-20 backdrop-blur-lg rounded-lg p-8 shadow-2xl text-md md:text-lg space-y-6 animate-fade-in border-t-4 border-yellow-400 hover:shadow-3xl transition duration-500">
+      <div className="max-w-3xl text-center bg-white bg-opacity-20 backdrop-blur-lg rounded-lg p-6 md:p-8 shadow-2xl text-md md:text-lg space-y-4 md:space-y-6 animate-fade-in border-t-4 border-yellow-400 hover:shadow-3xl transition duration-500">
         <p className="font-semibold text-yellow-300">
           Protecting women through real-time surveillance and advanced analytics.
         </p>
@@ -62,7 +62,7 @@ const HomePage = () => {
       </div>
 
       {/* Start Button */}
-      <button onClick={handleGetStarted} className="mt-8 px-10 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 text-lg font-bold rounded-full shadow-lg hover:shadow-3xl transition duration-300 ease-in-out transform hover:scale-105 animate-glow">
+      <button onClick={handleGetStarted} className="mt-6 px-8 sm:px-10 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 text-lg font-bold rounded-full shadow-lg hover:shadow-3xl transition duration-300 ease-in-out transform hover:scale-105 animate-glow">
         Get Started
       </button>
 
@@ -75,3 +75,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+  

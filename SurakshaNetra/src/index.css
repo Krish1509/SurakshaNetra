@@ -30,3 +30,19 @@
     animation: pulse 1.5s infinite;
   }
   
+  @keyframes glows {
+    0% {
+      box-shadow: 0 0 5px rgba(255, 165, 0, 0.3), 0 0 10px rgba(255, 165, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(255, 165, 0, 0.3), 0 0 10px rgba(255, 165, 0, 0.3);
+    }
+  }
+  
+  .animate-glows {
+    animation: glows 2s ease-in-out infinite;
+  }
+  
