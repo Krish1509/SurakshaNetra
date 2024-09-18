@@ -38,7 +38,7 @@ const LoginPage = () => {
             </button>
           </Link>
           <p className="mt-3 text-center text-yellow-200 text-lg font-medium">
-            Monitor and manage security feeds from nearby police stations and surveillance cameras. Receive real-time alerts for immediate response.
+           
           </p>
         </div>
       </div>
